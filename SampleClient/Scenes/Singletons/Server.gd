@@ -8,9 +8,8 @@ var port = 1909
 func _ready():
 	ConnectToServer()
 	
-
 func ConnectToServer():
-	network.connect(ip, port)
+	network.create_client(ip, port)
 	get_tree().set_network_peer(network)
 	print("Server Started")
 	

@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="GameServer"
+run/main_scene="res://Scenes/Main/Server.tscn"
 config/icon="res://icon.png"
+
+[logging]
+
+file_logging/enable_file_logging=true
 
 [physics]
 
